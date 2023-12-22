@@ -10,9 +10,13 @@
 		18BD3CC32B35CB14002F61EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC22B35CB14002F61EC /* AppDelegate.swift */; };
 		18BD3CC52B35CB14002F61EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC42B35CB14002F61EC /* SceneDelegate.swift */; };
 		18BD3CC72B35CB14002F61EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC62B35CB14002F61EC /* ViewController.swift */; };
-		18BD3CCA2B35CB14002F61EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD3CC82B35CB14002F61EC /* Main.storyboard */; };
 		18BD3CCC2B35CB16002F61EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD3CCB2B35CB16002F61EC /* Assets.xcassets */; };
 		18BD3CCF2B35CB16002F61EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD3CCD2B35CB16002F61EC /* LaunchScreen.storyboard */; };
+		18BD3CDA2B35D449002F61EC /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CD92B35D449002F61EC /* RxBlocking */; };
+		18BD3CDC2B35D449002F61EC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CDB2B35D449002F61EC /* RxCocoa */; };
+		18BD3CDE2B35D449002F61EC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CDD2B35D449002F61EC /* RxRelay */; };
+		18BD3CE02B35D449002F61EC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CDF2B35D449002F61EC /* RxSwift */; };
+		18BD3CE22B35D449002F61EC /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CE12B35D449002F61EC /* RxTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +24,6 @@
 		18BD3CC22B35CB14002F61EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18BD3CC42B35CB14002F61EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18BD3CC62B35CB14002F61EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18BD3CC92B35CB14002F61EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BD3CCB2B35CB16002F61EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BD3CCE2B35CB16002F61EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BD3CD02B35CB16002F61EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +34,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BD3CE22B35D449002F61EC /* RxTest in Frameworks */,
+				18BD3CDE2B35D449002F61EC /* RxRelay in Frameworks */,
+				18BD3CDC2B35D449002F61EC /* RxCocoa in Frameworks */,
+				18BD3CE02B35D449002F61EC /* RxSwift in Frameworks */,
+				18BD3CDA2B35D449002F61EC /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +67,6 @@
 				18BD3CC22B35CB14002F61EC /* AppDelegate.swift */,
 				18BD3CC42B35CB14002F61EC /* SceneDelegate.swift */,
 				18BD3CC62B35CB14002F61EC /* ViewController.swift */,
-				18BD3CC82B35CB14002F61EC /* Main.storyboard */,
 				18BD3CCB2B35CB16002F61EC /* Assets.xcassets */,
 				18BD3CCD2B35CB16002F61EC /* LaunchScreen.storyboard */,
 				18BD3CD02B35CB16002F61EC /* Info.plist */,
@@ -83,6 +90,13 @@
 			dependencies = (
 			);
 			name = MapkitTutorial;
+			packageProductDependencies = (
+				18BD3CD92B35D449002F61EC /* RxBlocking */,
+				18BD3CDB2B35D449002F61EC /* RxCocoa */,
+				18BD3CDD2B35D449002F61EC /* RxRelay */,
+				18BD3CDF2B35D449002F61EC /* RxSwift */,
+				18BD3CE12B35D449002F61EC /* RxTest */,
+			);
 			productName = MapkitTutorial;
 			productReference = 18BD3CBF2B35CB14002F61EC /* MapkitTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 18BD3CB62B35CB14002F61EC;
+			packageReferences = (
+				18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 18BD3CC02B35CB14002F61EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +144,6 @@
 			files = (
 				18BD3CCF2B35CB16002F61EC /* LaunchScreen.storyboard in Resources */,
 				18BD3CCC2B35CB16002F61EC /* Assets.xcassets in Resources */,
-				18BD3CCA2B35CB14002F61EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18BD3CC82B35CB14002F61EC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18BD3CC92B35CB14002F61EC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18BD3CCD2B35CB16002F61EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +299,6 @@
 				INFOPLIST_FILE = MapkitTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +325,6 @@
 				INFOPLIST_FILE = MapkitTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +362,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18BD3CD92B35D449002F61EC /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		18BD3CDB2B35D449002F61EC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		18BD3CDD2B35D449002F61EC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		18BD3CDF2B35D449002F61EC /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		18BD3CE12B35D449002F61EC /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18BD3CB72B35CB14002F61EC /* Project object */;
 }
