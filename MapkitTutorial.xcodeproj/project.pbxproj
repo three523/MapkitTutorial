@@ -7,48 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B7BB5F2B3709FD001D11A7 /* MapkitTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7BB5E2B3709FD001D11A7 /* MapkitTutorialTests.swift */; };
+		18B7BB672B372136001D11A7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18B7BB662B372136001D11A7 /* SnapKit */; };
 		18BD3CC32B35CB14002F61EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC22B35CB14002F61EC /* AppDelegate.swift */; };
 		18BD3CC52B35CB14002F61EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC42B35CB14002F61EC /* SceneDelegate.swift */; };
-		18BD3CC72B35CB14002F61EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC62B35CB14002F61EC /* ViewController.swift */; };
+		18BD3CC72B35CB14002F61EC /* RunningMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3CC62B35CB14002F61EC /* RunningMapViewController.swift */; };
 		18BD3CCC2B35CB16002F61EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD3CCB2B35CB16002F61EC /* Assets.xcassets */; };
 		18BD3CCF2B35CB16002F61EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD3CCD2B35CB16002F61EC /* LaunchScreen.storyboard */; };
-		18BD3CDA2B35D449002F61EC /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CD92B35D449002F61EC /* RxBlocking */; };
-		18BD3CDC2B35D449002F61EC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CDB2B35D449002F61EC /* RxCocoa */; };
-		18BD3CDE2B35D449002F61EC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CDD2B35D449002F61EC /* RxRelay */; };
-		18BD3CE02B35D449002F61EC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CDF2B35D449002F61EC /* RxSwift */; };
-		18BD3CE22B35D449002F61EC /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 18BD3CE12B35D449002F61EC /* RxTest */; };
+		18C514AB2B38153400E5ECAB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C514AA2B38153400E5ECAB /* Settings.bundle */; };
+		18C514AD2B383B5100E5ECAB /* RunningLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C514AC2B383B5100E5ECAB /* RunningLocationViewModel.swift */; };
+		18C514AF2B38424E00E5ECAB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C514AE2B38424E00E5ECAB /* Observable.swift */; };
+		18C514B12B38712000E5ECAB /* RunningLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C514B02B38712000E5ECAB /* RunningLocationTests.swift */; };
+		18C514B52B38850B00E5ECAB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C514AE2B38424E00E5ECAB /* Observable.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		18B7BB602B3709FD001D11A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BD3CB72B35CB14002F61EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BD3CBE2B35CB14002F61EC;
+			remoteInfo = MapkitTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		18B7BB5C2B3709FD001D11A7 /* MapkitTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapkitTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B7BB5E2B3709FD001D11A7 /* MapkitTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapkitTutorialTests.swift; sourceTree = "<group>"; };
 		18BD3CBF2B35CB14002F61EC /* MapkitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapkitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD3CC22B35CB14002F61EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18BD3CC42B35CB14002F61EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18BD3CC62B35CB14002F61EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18BD3CC62B35CB14002F61EC /* RunningMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningMapViewController.swift; sourceTree = "<group>"; };
 		18BD3CCB2B35CB16002F61EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BD3CCE2B35CB16002F61EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BD3CD02B35CB16002F61EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C514AA2B38153400E5ECAB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		18C514AC2B383B5100E5ECAB /* RunningLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningLocationViewModel.swift; sourceTree = "<group>"; };
+		18C514AE2B38424E00E5ECAB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		18C514B02B38712000E5ECAB /* RunningLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningLocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18B7BB592B3709FD001D11A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18BD3CBC2B35CB14002F61EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BD3CE22B35D449002F61EC /* RxTest in Frameworks */,
-				18BD3CDE2B35D449002F61EC /* RxRelay in Frameworks */,
-				18BD3CDC2B35D449002F61EC /* RxCocoa in Frameworks */,
-				18BD3CE02B35D449002F61EC /* RxSwift in Frameworks */,
-				18BD3CDA2B35D449002F61EC /* RxBlocking in Frameworks */,
+				18B7BB672B372136001D11A7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B3FF9F2B3D6C0400AF6633 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				18B3FFA02B3D6CA300AF6633 /* RunningMap */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		18B3FFA02B3D6CA300AF6633 /* RunningMap */ = {
+			isa = PBXGroup;
+			children = (
+				18BD3CC62B35CB14002F61EC /* RunningMapViewController.swift */,
+				18C514AC2B383B5100E5ECAB /* RunningLocationViewModel.swift */,
+			);
+			path = RunningMap;
+			sourceTree = "<group>";
+		};
+		18B7BB5D2B3709FD001D11A7 /* MapkitTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C514B02B38712000E5ECAB /* RunningLocationTests.swift */,
+				18B7BB5E2B3709FD001D11A7 /* MapkitTutorialTests.swift */,
+			);
+			path = MapkitTutorialTests;
+			sourceTree = "<group>";
+		};
 		18BD3CB62B35CB14002F61EC = {
 			isa = PBXGroup;
 			children = (
 				18BD3CC12B35CB14002F61EC /* MapkitTutorial */,
+				18B7BB5D2B3709FD001D11A7 /* MapkitTutorialTests */,
 				18BD3CC02B35CB14002F61EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				18BD3CBF2B35CB14002F61EC /* MapkitTutorial.app */,
+				18B7BB5C2B3709FD001D11A7 /* MapkitTutorialTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,19 +113,55 @@
 		18BD3CC12B35CB14002F61EC /* MapkitTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				18B3FF9F2B3D6C0400AF6633 /* Presentation */,
+				18C514B22B3878EC00E5ECAB /* Utils */,
 				18BD3CC22B35CB14002F61EC /* AppDelegate.swift */,
 				18BD3CC42B35CB14002F61EC /* SceneDelegate.swift */,
-				18BD3CC62B35CB14002F61EC /* ViewController.swift */,
+				18C514AE2B38424E00E5ECAB /* Observable.swift */,
 				18BD3CCB2B35CB16002F61EC /* Assets.xcassets */,
 				18BD3CCD2B35CB16002F61EC /* LaunchScreen.storyboard */,
 				18BD3CD02B35CB16002F61EC /* Info.plist */,
+				18C514AA2B38153400E5ECAB /* Settings.bundle */,
 			);
 			path = MapkitTutorial;
+			sourceTree = "<group>";
+		};
+		18C514B22B3878EC00E5ECAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18C514B32B3878FB00E5ECAB /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18C514B32B3878FB00E5ECAB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18B7BB5B2B3709FD001D11A7 /* MapkitTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B7BB622B3709FD001D11A7 /* Build configuration list for PBXNativeTarget "MapkitTutorialTests" */;
+			buildPhases = (
+				18B7BB582B3709FD001D11A7 /* Sources */,
+				18B7BB592B3709FD001D11A7 /* Frameworks */,
+				18B7BB5A2B3709FD001D11A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B7BB612B3709FD001D11A7 /* PBXTargetDependency */,
+			);
+			name = MapkitTutorialTests;
+			productName = MapkitTutorialTests;
+			productReference = 18B7BB5C2B3709FD001D11A7 /* MapkitTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		18BD3CBE2B35CB14002F61EC /* MapkitTutorial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18BD3CD32B35CB16002F61EC /* Build configuration list for PBXNativeTarget "MapkitTutorial" */;
@@ -91,11 +176,7 @@
 			);
 			name = MapkitTutorial;
 			packageProductDependencies = (
-				18BD3CD92B35D449002F61EC /* RxBlocking */,
-				18BD3CDB2B35D449002F61EC /* RxCocoa */,
-				18BD3CDD2B35D449002F61EC /* RxRelay */,
-				18BD3CDF2B35D449002F61EC /* RxSwift */,
-				18BD3CE12B35D449002F61EC /* RxTest */,
+				18B7BB662B372136001D11A7 /* SnapKit */,
 			);
 			productName = MapkitTutorial;
 			productReference = 18BD3CBF2B35CB14002F61EC /* MapkitTutorial.app */;
@@ -111,6 +192,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					18B7BB5B2B3709FD001D11A7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 18BD3CBE2B35CB14002F61EC;
+					};
 					18BD3CBE2B35CB14002F61EC = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -126,23 +211,32 @@
 			);
 			mainGroup = 18BD3CB62B35CB14002F61EC;
 			packageReferences = (
-				18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */,
+				18B7BB652B372136001D11A7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 18BD3CC02B35CB14002F61EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				18BD3CBE2B35CB14002F61EC /* MapkitTutorial */,
+				18B7BB5B2B3709FD001D11A7 /* MapkitTutorialTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18B7BB5A2B3709FD001D11A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18BD3CBD2B35CB14002F61EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18BD3CCF2B35CB16002F61EC /* LaunchScreen.storyboard in Resources */,
+				18C514AB2B38153400E5ECAB /* Settings.bundle in Resources */,
 				18BD3CCC2B35CB16002F61EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,17 +244,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18B7BB582B3709FD001D11A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C514B52B38850B00E5ECAB /* Observable.swift in Sources */,
+				18C514B12B38712000E5ECAB /* RunningLocationTests.swift in Sources */,
+				18B7BB5F2B3709FD001D11A7 /* MapkitTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18BD3CBB2B35CB14002F61EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BD3CC72B35CB14002F61EC /* ViewController.swift in Sources */,
+				18C514AD2B383B5100E5ECAB /* RunningLocationViewModel.swift in Sources */,
+				18C514AF2B38424E00E5ECAB /* Observable.swift in Sources */,
+				18BD3CC72B35CB14002F61EC /* RunningMapViewController.swift in Sources */,
 				18BD3CC32B35CB14002F61EC /* AppDelegate.swift in Sources */,
 				18BD3CC52B35CB14002F61EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B7BB612B3709FD001D11A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BD3CBE2B35CB14002F61EC /* MapkitTutorial */;
+			targetProxy = 18B7BB602B3709FD001D11A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18BD3CCD2B35CB16002F61EC /* LaunchScreen.storyboard */ = {
@@ -174,6 +288,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18B7BB632B3709FD001D11A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KD.MapkitTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapkitTutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapkitTutorial";
+			};
+			name = Debug;
+		};
+		18B7BB642B3709FD001D11A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KD.MapkitTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapkitTutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapkitTutorial";
+			};
+			name = Release;
+		};
 		18BD3CD12B35CB16002F61EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -210,6 +366,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -224,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,6 +427,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -278,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,12 +453,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YK85BG576;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapkitTutorial/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MapkitTutorial;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,12 +483,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YK85BG576;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapkitTutorial/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MapkitTutorial;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +509,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18B7BB622B3709FD001D11A7 /* Build configuration list for PBXNativeTarget "MapkitTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B7BB632B3709FD001D11A7 /* Debug */,
+				18B7BB642B3709FD001D11A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18BD3CBA2B35CB14002F61EC /* Build configuration list for PBXProject "MapkitTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -364,41 +539,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		18B7BB652B372136001D11A7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		18BD3CD92B35D449002F61EC /* RxBlocking */ = {
+		18B7BB662B372136001D11A7 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		18BD3CDB2B35D449002F61EC /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		18BD3CDD2B35D449002F61EC /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		18BD3CDF2B35D449002F61EC /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		18BD3CE12B35D449002F61EC /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18BD3CD82B35D449002F61EC /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
+			package = 18B7BB652B372136001D11A7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
