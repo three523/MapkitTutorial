@@ -14,9 +14,11 @@ final class ViewController: UIViewController {
     private let mapView: MKMapView = {
         let map = MKMapView()
         map.mapType = .mutedStandard
+        map.userTrackingMode = .followWithHeading
+        map.showsUserLocation = true
         return map
     }()
-    
+        
     private let userLoactionButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 30
@@ -54,7 +56,6 @@ final class ViewController: UIViewController {
         
         setup()
         checkAuthorization()
-        mapView.setUserTrackingMode(.follow, animated: true)
     }
     
     func checkAuthorization() {
@@ -97,6 +98,7 @@ private extension ViewController {
         addViews()
         setupAutoLayout()
         setupNavigation()
+        setupButton()
         bind()
     }
     
@@ -154,9 +156,19 @@ private extension ViewController {
         navigationItem.title = "운동 결과"
     }
     
+    func setupMap(_ startLocation: CLLocation) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let region = MKCoordinateRegion(center: startLocation.coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+    }
+    
     func bind() {
         runningLocationViewModel.runningLocation.observe(on: self) { [weak self] runningLocation in
             self?.updateUI(runningLocation: runningLocation)
+        }
+        runningLocationViewModel.startLocation.observe(on: self) { [weak self] startLocation in
+            guard let startLocation else { return }
+            self?.setupMap(startLocation)
         }
     }
 }

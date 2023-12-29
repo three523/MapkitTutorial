@@ -22,7 +22,7 @@ class RunningMapViewModel: NSObject {
     var runningLocation: Observable<RunningLocation> = Observable(.empty)
     var totalLocation: [CLLocation] = [CLLocation]()
     var previousLocation: CLLocation?
-    
+        
     func updateRunningLocation(locations: [CLLocation]) {
         if locations.last == nil { return }
         let newLocations = fliterNewLocations(locations)
@@ -60,6 +60,8 @@ class RunningMapViewModel: NSObject {
 
 final class DefaultRunningLocationViewModel: RunningMapViewModel {
     
+    var startLocation: Observable<CLLocation?> = Observable(nil)
+    
     override init() {
         super.init()
         manager.delegate = self
@@ -76,6 +78,9 @@ final class DefaultRunningLocationViewModel: RunningMapViewModel {
 extension DefaultRunningLocationViewModel: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         updateRunningLocation(locations: locations)
+        if totalLocation.count == 0 {
+            self.startLocation.value = locations.first
+        }
     }
 }
 
